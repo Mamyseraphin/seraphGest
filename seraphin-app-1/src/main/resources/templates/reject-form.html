@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejeter la Demande</title>
+</head>
+<body>
+<h1>Rejeter la Demande de Congé</h1>
+<form action="/admin/reject-conge" method="post">
+  <input type="hidden" name="id" value="${demandeConge.id}" />
+  <div>
+    <label for="rejectionReason">Cause du Rejet :</label>
+    <textarea name="rejectionReason" id="rejectionReason" rows="4" required></textarea>
+  </div>
+  <button type="submit">Rejeter</button>
+</form>
+</body>
+</html>
